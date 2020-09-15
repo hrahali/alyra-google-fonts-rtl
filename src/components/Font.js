@@ -20,10 +20,12 @@ const Font = (props) => {
           {text}
         </p>
         <a
+          rel="noopener noreferrer"
+          target="_blank"
           className="text-danger"
           href={`https://fonts.google.com/specimen/${familyPlus}`}
         >
-          Voir sur Google Fonts
+          Voir sur Google Fonts (ouvre un nouveau tab)
         </a>
       </div>
     </article>
