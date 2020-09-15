@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container min-vh-100">
         <div className="row my-5">
           <div className="col-lg-3">
             <div style={{ position: "sticky", top: 0 }}>
