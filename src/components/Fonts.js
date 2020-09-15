@@ -4,7 +4,7 @@ import useGoogleFonts from "./../hooks/useGoogleFonts"
 import GoogleFontLoader from "react-google-font-loader"
 
 const Recent = (props) => {
-  const { text, size, title, sort = "date" } = props
+  const { id, text, size, title, sort = "date" } = props
   const { fonts, loading } = useGoogleFonts(sort)
   return (
     <>
@@ -21,7 +21,7 @@ const Recent = (props) => {
                 subsets={["latin"]}
               />
               <hr />
-              <h2 className="mb-3">
+              <h2 id={id} className="mb-3">
                 <span className="badge bg-danger">{title}</span>
               </h2>
               {fonts.map((font) => (
