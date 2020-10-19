@@ -14,7 +14,7 @@ const useGoogleFonts = (sort = "date") => {
         throw new Error("something wrong")
       })
       .then((data) => {
-        console.log(data.items.slice(0, 10))
+        console.log(data)
         setFonts(data.items.slice(0, 10))
       })
       .catch((error) => {

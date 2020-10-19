@@ -7,19 +7,20 @@ const Font = (props) => {
     <article className="col-lg-6 mb-3">
       <div className="shadow p-3">
         <h2 className="h6 d-flex aling-items-center justify-content-between">
-          <span>{family}</span>
-          <small>{variants.length} variant(s)</small>
+          <span data-testid="font-family">{family}</span>
+          <small data-testid="font-variants-count">{variants.length} variant(s)</small>
         </h2>
         <p>
-          <span className="badge bg-dark">{category.toUpperCase()}</span>
+          <span className="badge bg-dark" data-testid="font-category">{category.toUpperCase()}</span>
         </p>
-        <p
+        <p data-testid="font-style"
           style={{ fontFamily: family, fontSize: `${size}px` }}
           className="sample"
         >
           {text}
         </p>
         <a
+          data-testid="font-link"
           rel="noopener noreferrer"
           target="_blank"
           className="text-danger"

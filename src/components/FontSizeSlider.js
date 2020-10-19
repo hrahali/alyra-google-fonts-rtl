@@ -18,6 +18,7 @@ const FontSizeSlider = ({ size, setSize }) => {
         step="1"
         value={size}
         onChange={handleSliderChange}
+        data-testid="input-size"
       />
     </>
   )

@@ -14,6 +14,7 @@ const TextSampleForm = ({ text, setText }) => {
         className="form-control"
         value={text}
         onChange={handleTextareaChange}
+        data-testid="textarea-text"
       />
     </div>
   )
