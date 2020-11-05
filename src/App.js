@@ -4,7 +4,7 @@ import FontSizeSlider from "./components/FontSizeSlider"
 import Fonts from "./components/Fonts"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import RecentFonts from "./components/RecentFonts"
+
 
 function App() {
   const [size, setSize] = useState(20)
@@ -23,7 +23,6 @@ function App() {
             </div>
           </div>
           <div className="col-lg-9">
-            <RecentFonts text={text} size={size} />
             <Fonts
               text={text}
               size={size}
