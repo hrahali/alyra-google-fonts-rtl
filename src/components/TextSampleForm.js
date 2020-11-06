@@ -7,7 +7,7 @@ const TextSampleForm = ({ text, setText }) => {
   return (
     <div className="mb-3">
       <label htmlFor="text" className="form-label font-weight-bold mb-3">
-        Tapez votre text
+        Tapez votre texte
       </label>
       <textarea
         id="text"
